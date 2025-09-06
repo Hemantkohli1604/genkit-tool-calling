@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -137,3 +138,12 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+=======
+/node_modules
+/dist
+/build
+/.env
+
+package-lock.json
+/.DS_Store
+>>>>>>> 6975885 (Genkit Tool Calling)

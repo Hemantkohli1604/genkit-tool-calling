@@ -1,0 +1,28 @@
+{
+  "name": "4-genkit-tool-calling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node --watch src/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "genkit:init": "genkit init",
+    "genkit:ui": "genkit start -- node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@genkit-ai/express": "^1.17.0",
+    "@genkit-ai/googleai": "^1.17.0",
+    "genkit": "^1.17.0",
+    "express": "4.21.2"
+  }
+}
