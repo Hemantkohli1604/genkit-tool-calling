@@ -25,10 +25,10 @@ Express Framework is used to publish the API endpoints POST /get-energy-demand.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
+Before you begin, ensure you have the following:
 
-*   [Node.js](https://nodejs.org/) (LTS version recommended)
-*   Follow the steps mentioned in [Genkit | Getting Started]https://genkit.dev/docs/get-started/ 
+*   [Node.js](https://nodejs.org/) (LTS version recommended)  
+*   As a perquisite follow the steps mentioned in https://genkit.dev/docs/get-started/#configure-your-model-api-key to get a free API key from Google AI studio.
 
 ## Setup
 
@@ -45,7 +45,7 @@ Before you begin, ensure you have the following installed:
 
 4.  **Configure Environment Variables:**
 
-    If not done already, Get your API key from [Google AI studio] https://aistudio.google.com/apikey. You can get an API key for free here. 
+    Get your API key from [Google AI studio] https://aistudio.google.com/apikey.
 
     Once you have a key, set the GEMINI_API_KEY environment variable:
     ```bash
