@@ -7,7 +7,7 @@ In this case we are using two prompts:
 1. weatherPrompt: This prompt uses the "getCurrentWeatherTool" and "getWeatherForecastTool" from "bom-tools.ts" to get the current weather and forecast for next 7 days from an external source (HTTP and FTP).
 2. reportPrompt: This prompt uses the "getEnergyDemandTool" from "energy-tools.ts" (Simulated) to predict the demand based on weather.
 
-## Solution Overview Diagram
+## Solution Diagram
 
 ![Tool Calling Overview Diagram](tool-calling-overview.png "Tool Calling Overview Diagram")
 
