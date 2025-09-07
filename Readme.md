@@ -94,6 +94,9 @@ curl --location 'http://127.0.0.1:8080/get-energy-demand' \
 
 ## Known Issue
 
-1. The BOM anonymous FTP endpoint sometimes times out, this will give a python error saying "FTP connection Failed". This is not handled well and will not generate a response. For demo pourpose reinitiate the POST call.
+1. The BOM anonymous FTP endpoint sometimes times out, this will give a python error saying "FTP connection Failed". This is not handled well and will not generate a response. For demo pourpose reinitiate the POST call. 
+
+*Python stderr: FTP connection or operation failed: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond*
+
 2. The application takes some time to initialize and might cause a restart to express server. This is still being worked upon.
 
