@@ -58,7 +58,7 @@ export const getCurrentWeatherTool = ai.defineTool(
   
         // Get the latest observation, which is the first object in the data array
         const latestObservation = data.observations.data[0];
-        console.log('Latest observation:', latestObservation);
+        //console.log('Latest observation:', latestObservation);
         // Extract key weather details from the observation
         const time = latestObservation.local_date_time_full;
         const temperature = latestObservation.air_temp;

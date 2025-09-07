@@ -104,11 +104,12 @@ export const victoriaEnergyMarketFlow = ai.defineFlow(
     });
 
     const cleanedOutput = { ...rawOutput, dailyBreakdown: cleanedBreakdown };
+    console.log('Cleaned Output:', cleanedOutput);
 
     // Final validation against the strict schema before returning.
     return energyReportSchema.parse(cleanedOutput);
 
-    console.log('Cleaned Output:', cleanedOutput);
+    
   }
 );
 
