@@ -1,6 +1,6 @@
 # Genkit Tool Calling
 
-This project demonstates the "tool-calling" capabilities of Google's Genkit framework. It showcases how a generative AI model can use tools to interact with external systems. 
+This project demonstrates the "tool-calling" capabilities of Google's Genkit framework. It showcases how a generative AI model can use tools to interact with external systems. 
 
 In this case we are using two prompts:
 
@@ -20,6 +20,8 @@ This example project is set up to potentially interact with:
 *   **A HTTP Endpoint:** For Current weather in JSON Format.
 *   **An Anonymous FTP Location:** For Weather Forecast.
 *   **A Simulated output:** For Enenrgy Demand Calculation.
+
+Express Framework is used to publish the API endpoints POST /get-energy-demand.
 
 ## Prerequisites
 
@@ -72,4 +74,26 @@ To start the application without the Genkit UI, run:
 npm run build
 npm start
 ```
+
+## Execute the Flow
+
+To execute the flow initiate a POST request to the application.
+
+```bash
+
+curl --location 'http://127.0.0.1:8080/get-energy-demand' \
+--header 'Content-Type: application/json' \
+--data '{
+    "data": {
+        "location": "Melbourne",
+        "dayType": "weekday"
+    }
+}'
+
+```
+
+## Known Issue
+
+1. The BOM anonymous FTP endpoint sometimes times out, this will give a python error saying "FTP connection Failed". This is not handled well and will not generate a response. For demo pourpose reinitiate the POST call.
+2. The application takes some time to initialize and might cause a restart to express server. This is still being worked upon.
 

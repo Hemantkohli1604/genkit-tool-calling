@@ -58,7 +58,7 @@ export const victoriaEnergyMarketFlow = ai.defineFlow(
     const finalReportPrompt = ai.definePrompt(
       {
         output: { schema: rawEnergyReportSchema, format: 'json' },
-        name: "reportPrompt",
+        name: "EnergyDemandPrompt",
         tools: [getEnergyDemandTool],
         system: "You are an energy market analyst able to predict energy demand.",
       },
