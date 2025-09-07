@@ -26,8 +26,7 @@ This example project is set up to potentially interact with:
 Before you begin, ensure you have the following installed:
 
 *   [Node.js](https://nodejs.org/) (LTS version recommended)
-
-Follow the steps mentioned in [Genkit | Getting Started]https://genkit.dev/docs/get-started/ 
+*   Follow the steps mentioned in [Genkit | Getting Started]https://genkit.dev/docs/get-started/ 
 
 ## Setup
 
